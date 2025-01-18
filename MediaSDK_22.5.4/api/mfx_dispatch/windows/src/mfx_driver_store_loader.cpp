@@ -189,7 +189,7 @@ bool DriverStoreLoader::LoadCfgMgr()
 {
     if (!m_moduleCfgMgr)
     {
-        m_moduleCfgMgr = mfx_dll_load(L"cfgmgr32.dll");
+        m_moduleCfgMgr = mfx_dll_load(L"C:\\Windows\\System32\\cfgmgr32.dll");
 
         if (!m_moduleCfgMgr)
         {

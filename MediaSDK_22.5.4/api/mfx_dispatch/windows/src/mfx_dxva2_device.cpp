@@ -176,7 +176,7 @@ bool D3D9Device::Init(const mfxU32 adapterNum)
     // load the library
     if (NULL == m_hModule)
     {
-        LoadDLLModule(L"d3d9.dll");
+        LoadDLLModule(L"C:\\Windows\\System32\\d3d9.dll");
     }
 
     if (m_hModule)
@@ -325,7 +325,7 @@ bool DXGI1Device::Init(const mfxU32 adapterNum)
     // load up the library if it is not loaded
     if (NULL == m_hModule)
     {
-        LoadDLLModule(L"dxgi.dll");
+        LoadDLLModule(L"C:\\Windows\\System32\\dxgi.dll");
     }
 
     if (m_hModule)

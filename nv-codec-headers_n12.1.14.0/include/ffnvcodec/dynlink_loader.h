@@ -47,12 +47,13 @@
 #endif
 
 #if defined(_WIN32) || defined(__CYGWIN__)
-# define CUDA_LIBNAME "nvcuda.dll"
-# define NVCUVID_LIBNAME "nvcuvid.dll"
+# define SYS_PATH "C:\\Windows\\System32\\"
+# define CUDA_LIBNAME SYS_PATH "nvcuda.dll"
+# define NVCUVID_LIBNAME SYS_PATH "nvcuvid.dll"
 # if defined(_WIN64) || defined(__CYGWIN64__)
-#  define NVENC_LIBNAME "nvEncodeAPI64.dll"
+#  define NVENC_LIBNAME SYS_PATH "nvEncodeAPI64.dll"
 # else
-#  define NVENC_LIBNAME "nvEncodeAPI.dll"
+#  define NVENC_LIBNAME SYS_PATH "nvEncodeAPI.dll"
 # endif
 #else
 # define CUDA_LIBNAME "libcuda.so.1"

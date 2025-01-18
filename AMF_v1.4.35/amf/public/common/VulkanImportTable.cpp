@@ -242,7 +242,7 @@ AMF_RESULT VulkanImportTable::LoadFunctionsTable()
         return AMF_OK;
     }
 #if defined(_WIN32)
-    m_hVulkanDll = amf_load_library(L"vulkan-1.dll");
+    m_hVulkanDll = amf_load_library(L"C:\\Windows\\System32\\vulkan-1.dll");
 #elif defined(__ANDROID__)
     m_hVulkanDll = amf_load_library1(L"libvulkan.so", true);
 #elif defined(__linux__)

@@ -259,7 +259,7 @@ AMF_RESULT OpenGLImportTable::LoadFunctionsTable()
         return AMF_OK;
     }
 #if defined(_WIN32)
-    m_hOpenGLDll = amf_load_library(L"opengl32.dll");
+    m_hOpenGLDll = amf_load_library(L"C:\\Windows\\System32\\opengl32.dll");
 #elif defined(__ANDROID__)
     m_hOpenGLDll = amf_load_library1(L"libGLES.so", true);
 #elif defined(__linux__)
